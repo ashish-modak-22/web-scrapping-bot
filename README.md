@@ -122,6 +122,7 @@ options.add_argument("--headless")
 # 👨‍💻 Author
 
 Ashish Modak
+
 Python automation + web scraping learning project using Selenium, filters, and JSON pipeline.
 
 ---
