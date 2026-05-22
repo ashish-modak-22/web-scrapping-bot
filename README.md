@@ -28,17 +28,17 @@ Results printed in terminal
 
 web_bot/
 │
-├── main.py                  # Main controller (menu system)
+├── main.py                            # Main controller (menu system)
 ├── scrapers/
-│   ├── job_scraper.py      # Jobs scraping logic
-│   └── deal_scraper.py     # Deals scraping logic
+│   ├── job_scraper.py                 # Jobs scraping logic
+│   └── deals_scraper.py               # Deals scraping logic
 │
 ├── selenium_driver/
-│   └── driver_setup.py     # Selenium driver + headless config
+│   └── selenium_driver_Setup.py         # Selenium driver + headless config
 │
 ├── utils/
-│   ├── filters.py          # Duplicate removal + keyword filtering
-│   └── json_manager.py     # JSON load/save/update system
+│   ├── data_filter.py                   # Duplicate removal + keyword filtering
+│   └── json_manager.py                 # JSON load/save/update system
 │
 ├── data/
 │   ├── jobs.json
