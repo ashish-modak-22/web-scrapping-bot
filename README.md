@@ -1,6 +1,17 @@
 # 🤖 Smart Web Bot Assistant (Python Selenium Automation Project)
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![ChromeDriver](https://img.shields.io/badge/ChromeDriver-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-Automation-orange?style=for-the-badge&logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 A modular Python automation bot that scrapes **Jobs** and **Deals** using Selenium and stores structured data in JSON format. It demonstrates real-world web scraping, automation, filtering, and data pipeline design.
+
+</div>
 
 ---
 
