@@ -131,11 +131,10 @@ options.add_argument("--headless")
 
 ---
 
-# 👨‍💻 Author
 
-Ashish Modak
-
-Python automation + web scraping learning project using Selenium, filters, and JSON pipeline.
+## 📄 License
+ 
+This project is open source and available under the [Apache License 2.0](License).
 
 ---
 
