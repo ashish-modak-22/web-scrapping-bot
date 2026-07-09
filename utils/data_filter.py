@@ -27,14 +27,22 @@ def keyword_Filter(data,key, keywords):
     # Stores items that match at least one of the specified keywords
     filtered_data = []
 
+    # Iterate through each dictionary in the input list
     for item in data:
+
+        
+        # Get the value for the given key, convert it to lowercase for case-insensitive keyword matching
         text = str(item.get(key,"")).lower()
 
+        # Check if any keyword exists in the text
         for word in keywords:
             if word.lower() in text:
+
+                # Add the matching item to the result list
                 filtered_data.append(item)
                 break
-        
+
+    # Return all items that matched at least one keyword
     return filtered_data
 
 
