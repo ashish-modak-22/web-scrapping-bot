@@ -21,7 +21,10 @@ def remove_Duplicates(data, key):
     return unique_data
 
 
+
 def keyword_Filter(data,key, keywords):
+
+    # Stores items that match at least one of the specified keywords
     filtered_data = []
 
     for item in data:
@@ -33,6 +36,7 @@ def keyword_Filter(data,key, keywords):
                 break
         
     return filtered_data
+
 
 
 def clean_empty_values(data, key):
