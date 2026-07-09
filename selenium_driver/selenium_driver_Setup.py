@@ -25,6 +25,10 @@ def get_Driver():
 
     # Automatically install and configure the appropriate ChromeDriver
     service = Service(ChromeDriverManager().install())
+
+    # Launch a Chrome Browser instacnce with the specified service and options
     driver = webdriver.Chrome(service=service, options=options)
+
+    # Return the configured WebDriver object for use in scraping or automation
     return driver
 
