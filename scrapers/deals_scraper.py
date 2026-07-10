@@ -21,8 +21,10 @@ def scrape_deals():
         # Locate all product cards on the search results page
         products = driver.find_elements(By.XPATH, "//div[contains(@data-component-type,'s-search-result')]")
 
+        # Extract information from each product card
         for product in products:
             try:
+                # Get the product title
                 title = product.find_element(By.CSS_SELECTOR, "h2 span").text
                 link = product.find_element(By.TAG_NAME, "a").get_attribute("href")
 
