@@ -3,9 +3,14 @@ from scrapers.deals_scraper import scrape_deals
 from utils.data_filter import remove_Duplicates
 from utils.json_manager import json_save
 
+
+
 def main():
+
+    # Display a welcome message when the bot starts 
     print("---------- Your smart web bot is started ----------\n")
 
+    # Keep the bot running until the user chooses to exit
     while True:
         print("\n----- Menu Underlisted: -----")
         print("1. Scrape the Jobs")
