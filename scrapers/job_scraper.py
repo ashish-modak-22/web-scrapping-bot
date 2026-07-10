@@ -29,6 +29,7 @@ def scrape_job():
         # Display the total number of jobs found
         print("TOTAL JOBS FOUND:", len(jobs))
 
+        # Extract details from each job listing
         for job in jobs:
 
             try:
