@@ -30,12 +30,16 @@ def main():
             # Scrape job listings
             jobs = scrape_job()
 
+            
             # Check if any jobs were found
             if not jobs:
                 print("Sorry, we haven't found any jobs at the moment!")
                 continue
 
+            # Remove duplicate job entries based on the title
             jobs = remove_Duplicates(jobs, "title")
+
+            # Save the cleaned data to a JSON file
             json_save("data/jobs.json", jobs)
 
             print(f"Jobs saved successfully and the number of jobs saved is: {len(jobs)}")
