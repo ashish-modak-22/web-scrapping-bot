@@ -76,14 +76,18 @@ def main():
             for deal in deals[:10]:
                 print(deal)
 
+
+        # Exit the application
         elif choice == "3":
             print("\nExiting the bot. Have a nice day!")
             break
 
+        # Handle invalid menu input
         else:
             print("\nInvalid choice! Please enter 1, 2, or 3.")
 
 
+# Run the application only when this file is executed directly
 if __name__ == "__main__":
     main()
 
