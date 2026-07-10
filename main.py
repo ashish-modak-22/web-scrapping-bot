@@ -54,12 +54,16 @@ def main():
         elif choice == "2":
             print("\nOk, you want to scrape the deal details.....\n")
 
+            # Scrape product deals
             deals = scrape_deals()
 
+
+            # Check if any deals were found
             if not deals:
                 print("Sorry, we haven't found any deals at the moment!")
                 continue
 
+            # Remove duplicate deals based on the title
             deals = remove_Duplicates(deals, "title")
             json_save("data/deals.json", deals)
 
