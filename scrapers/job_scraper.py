@@ -4,8 +4,10 @@ from selenium_driver.selenium_driver_Setup import get_Driver
 
 def scrape_job():
 
+    # Initialize and configure the selenium WebDriver
     driver = get_Driver()
 
+    # Store all scraped job listings
     jobs_list = []
 
     try:
