@@ -65,10 +65,14 @@ def main():
 
             # Remove duplicate deals based on the title
             deals = remove_Duplicates(deals, "title")
+
+            # Save the cleaned data to a JSON file
             json_save("data/deals.json", deals)
 
             print(f"Deals saved successfully and the number of deals saved is: {len(deals)}")
 
+
+            # Show a preview of the first 10 deals
             for deal in deals[:10]:
                 print(deal)
 
