@@ -20,11 +20,13 @@ def scrape_job():
         # Wait for the page to be loaded
         driver.implicitly_wait(10)
 
+        # Locate all job listing cards
         jobs = driver.find_elements(
             By.CSS_SELECTOR,
             "a.preventLink"
         )
 
+        # Display the total number of jobs found
         print("TOTAL JOBS FOUND:", len(jobs))
 
         for job in jobs:
