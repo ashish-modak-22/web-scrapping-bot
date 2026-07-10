@@ -44,9 +44,13 @@ def main():
 
             print(f"Jobs saved successfully and the number of jobs saved is: {len(jobs)}")
 
+            
+            # Show a preview of the first 10 jobs
             for job in jobs[:10]:
                 print(job)
 
+        
+        # Handle deal scraping
         elif choice == "2":
             print("\nOk, you want to scrape the deal details.....\n")
 
