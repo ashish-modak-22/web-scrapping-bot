@@ -44,13 +44,17 @@ def scrape_job():
                 # Get the direct URL of the job posting
                 link = job.get_attribute("href")
 
+                # Save the extracted job information
                 jobs_list.append({
                     "title": title,
                     "company": "RemoteOK",
                     "link": link
                 })
 
+            
             except:
+
+                # Skip the current job if required data can't be extracted 
                 continue
 
     except Exception as e:
