@@ -57,10 +57,16 @@ def scrape_job():
                 # Skip the current job if required data can't be extracted 
                 continue
 
+    
     except Exception as e:
+
+        # Handle the unexpected errors during the scraping process
         print("Error:", e)
 
     finally:
+
+        # Close the browser and release resources
         driver.quit()
 
+    # Return the complete list of scraped jobs
     return jobs_list
