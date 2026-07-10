@@ -18,6 +18,7 @@ def scrape_deals():
         # Wait for page elements to be loaded
         driver.implicitly_wait(6)
 
+        # Locate all product cards on the search results page
         products = driver.find_elements(By.XPATH, "//div[contains(@data-component-type,'s-search-result')]")
 
         for product in products:
