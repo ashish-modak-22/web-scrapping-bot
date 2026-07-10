@@ -54,9 +54,12 @@ def scrape_deals():
                 continue
 
     except Exception as e:
+        # Handle unexpected errors during the scraping process
         print("Error scraping deals:", e)
 
     finally:
+        # Close the browser and release resources
         driver.quit()
 
+    # Return the complete list of scraped deals
     return deals_list
